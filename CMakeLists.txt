@@ -29,13 +29,13 @@ set(GLFE_INCLUDE_PATH ${GLFW_SRC_PATH}/include)
 set(GLFE_DEPS_PATH ${GLFW_SRC_PATH}/deps)
 
 set(SRC_PATH ${CMAKE_SOURCE_DIR}/src)
-set(OFFSCREEN_SRC_PATH ${SRC_PATH}/offscreen)
+set(HELLOWINDOW_SRC_PATH ${SRC_PATH}/helloWindow)
 
 include_directories(${GLFE_INCLUDE_PATH})
 include_directories(${GLFE_DEPS_PATH})
 
-#add_executable(offscreen ${OFFSCREEN_SRC_PATH}/offscreen.c ${OFFSCREEN_SRC_PATH}/myPng.c ${SRC_PATH}/glad.c)
-#target_link_libraries(offscreen ${COMMON_LIBS})
+add_executable(helloWindow ${HELLOWINDOW_SRC_PATH}/helloWindow.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(helloWindow ${COMMON_LIBS})
 
 
 
