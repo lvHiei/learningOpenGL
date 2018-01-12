@@ -51,8 +51,8 @@ int main()
     // Shader ourShader("3.3.shader.vs", "3.3.shader.fs"); // you can name your shader files however you like
     char vs[128] = {0};
     char fs[128] = {0};
-    sprintf(vs, "%s%s", SHADERS_PATH, "e2_shades0.vs");
-    sprintf(fs, "%s%s", SHADERS_PATH, "shades0.fs");
+    sprintf(vs, "%s%s", SHADERS_PATH, "3.5.shader.vs");
+    sprintf(fs, "%s%s", SHADERS_PATH, "3.3.shader.fs");
     Shader ourShader(vs, fs); // you can name your shader files however you like
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
