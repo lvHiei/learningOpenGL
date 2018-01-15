@@ -47,41 +47,41 @@ set(COMMON_SRCS
 set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} -std=c++11)
 
 
-add_executable(helloWindow ${HELLOWINDOW_SRC_PATH}/helloWindow.cpp ${SRC_PATH}/glad.c)
-target_link_libraries(helloWindow ${COMMON_LIBS})
+add_executable(1.1.helloWindow ${HELLOWINDOW_SRC_PATH}/helloWindow.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(1.1.helloWindow ${COMMON_LIBS})
 
-add_executable(helloTriangle ${HELLOTRIANGLE_SRC_PATH}/helloTriangle.cpp ${SRC_PATH}/glad.c)
-target_link_libraries(helloTriangle ${COMMON_LIBS})
+add_executable(2.1.helloTriangle ${HELLOTRIANGLE_SRC_PATH}/helloTriangle.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(2.1.helloTriangle ${COMMON_LIBS})
 
-add_executable(helloTriangleIndexed ${HELLOTRIANGLE_SRC_PATH}/helloTriangleIndexed.cpp ${SRC_PATH}/glad.c)
-target_link_libraries(helloTriangleIndexed ${COMMON_LIBS})
+add_executable(2.2.helloTriangleIndexed ${HELLOTRIANGLE_SRC_PATH}/helloTriangleIndexed.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(2.2.helloTriangleIndexed ${COMMON_LIBS})
 
-add_executable(shaders_uniform ${SHADERS_SRC_PATH}/shaders_uniform.cpp ${SRC_PATH}/glad.c)
-target_link_libraries(shaders_uniform ${COMMON_LIBS})
+add_executable(3.1.shaders_uniform ${SHADERS_SRC_PATH}/shaders_uniform.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(3.1.shaders_uniform ${COMMON_LIBS})
 
-add_executable(shaders_interpolation ${SHADERS_SRC_PATH}/shaders_interpolation.cpp ${SRC_PATH}/glad.c)
-target_link_libraries(shaders_interpolation ${COMMON_LIBS})
+add_executable(3.2.shaders_interpolation ${SHADERS_SRC_PATH}/shaders_interpolation.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(3.2.shaders_interpolation ${COMMON_LIBS})
 
-add_executable(shaders_class ${SHADERS_SRC_PATH}/shaders_class.cpp ${COMMON_SRCS})
-target_link_libraries(shaders_class ${COMMON_LIBS})
+add_executable(3.3.shaders_class ${SHADERS_SRC_PATH}/shaders_class.cpp ${COMMON_SRCS})
+target_link_libraries(3.3.shaders_class ${COMMON_LIBS})
 
-add_executable(textures ${TEXTURES_SRC_PATH}/textures.cpp ${COMMON_SRCS})
-target_link_libraries(textures ${COMMON_LIBS})
+add_executable(4.1.textures ${TEXTURES_SRC_PATH}/textures.cpp ${COMMON_SRCS})
+target_link_libraries(4.1.textures ${COMMON_LIBS})
 
-add_executable(textures_combined ${TEXTURES_SRC_PATH}/textures_combined.cpp ${COMMON_SRCS})
-target_link_libraries(textures_combined ${COMMON_LIBS})
+add_executable(4.2.textures_combined ${TEXTURES_SRC_PATH}/textures_combined.cpp ${COMMON_SRCS})
+target_link_libraries(4.2.textures_combined ${COMMON_LIBS})
 
-add_executable(transformations ${TRANSFORM_SRC_PATH}/transformations.cpp ${COMMON_SRCS})
-target_link_libraries(transformations ${COMMON_LIBS})
+add_executable(5.1.transformations ${TRANSFORM_SRC_PATH}/transformations.cpp ${COMMON_SRCS})
+target_link_libraries(5.1.transformations ${COMMON_LIBS})
 
-add_executable(coordinate_systems ${COORDINATE_SYSTEM_SRC_PATH}/coordinate_systems.cpp ${COMMON_SRCS})
-target_link_libraries(coordinate_systems ${COMMON_LIBS})
+add_executable(6.1.coordinate_systems ${COORDINATE_SYSTEM_SRC_PATH}/coordinate_systems.cpp ${COMMON_SRCS})
+target_link_libraries(6.1.coordinate_systems ${COMMON_LIBS})
 
-add_executable(coordinate_systems_depth ${COORDINATE_SYSTEM_SRC_PATH}/coordinate_systems_depth.cpp ${COMMON_SRCS})
-target_link_libraries(coordinate_systems_depth ${COMMON_LIBS})
+add_executable(6.2.coordinate_systems_depth ${COORDINATE_SYSTEM_SRC_PATH}/coordinate_systems_depth.cpp ${COMMON_SRCS})
+target_link_libraries(6.2.coordinate_systems_depth ${COMMON_LIBS})
 
-add_executable(coordinate_systems_multiple ${COORDINATE_SYSTEM_SRC_PATH}/coordinate_systems_multiple.cpp ${COMMON_SRCS})
-target_link_libraries(coordinate_systems_multiple ${COMMON_LIBS})
+add_executable(6.3.coordinate_systems_multiple ${COORDINATE_SYSTEM_SRC_PATH}/coordinate_systems_multiple.cpp ${COMMON_SRCS})
+target_link_libraries(6.3.coordinate_systems_multiple ${COMMON_LIBS})
 
 
 
@@ -92,38 +92,38 @@ set(E_TEXTURES_PATH ${EXERCISE_PATH}/4.1.textures)
 set(E_TRANSFROMS_PATH ${EXERCISE_PATH}/5.1.transformations)
 set(E_COORDINATE_SYSTEM_PATH ${EXERCISE_PATH}/6.1.coordinate_systems)
 
-add_executable(e_helloTriangle1 ${E_HELLOTRIANGLE_PATH}/helloTriangle1.cpp ${SRC_PATH}/glad.c)
-target_link_libraries(e_helloTriangle1 ${COMMON_LIBS})
+add_executable(e2_helloTriangle1 ${E_HELLOTRIANGLE_PATH}/helloTriangle1.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(e2_helloTriangle1 ${COMMON_LIBS})
 
-add_executable(e_helloTriangle2 ${E_HELLOTRIANGLE_PATH}/helloTriangle2.cpp ${SRC_PATH}/glad.c)
-target_link_libraries(e_helloTriangle2 ${COMMON_LIBS})
+add_executable(e2_helloTriangle2 ${E_HELLOTRIANGLE_PATH}/helloTriangle2.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(e2_helloTriangle2 ${COMMON_LIBS})
 
-add_executable(e_helloTriangle3 ${E_HELLOTRIANGLE_PATH}/helloTriangle3.cpp ${SRC_PATH}/glad.c)
-target_link_libraries(e_helloTriangle3 ${COMMON_LIBS})
+add_executable(e2_helloTriangle3 ${E_HELLOTRIANGLE_PATH}/helloTriangle3.cpp ${SRC_PATH}/glad.c)
+target_link_libraries(e2_helloTriangle3 ${COMMON_LIBS})
 
-add_executable(e_shaders1 ${E_SHADERS_PATH}/shaders1.cpp ${COMMON_SRCS})
-target_link_libraries(e_shaders1 ${COMMON_LIBS})
+add_executable(e3_shaders1 ${E_SHADERS_PATH}/shaders1.cpp ${COMMON_SRCS})
+target_link_libraries(e3_shaders1 ${COMMON_LIBS})
 
-add_executable(e_shaders2 ${E_SHADERS_PATH}/shaders2.cpp ${COMMON_SRCS})
-target_link_libraries(e_shaders2 ${COMMON_LIBS})
+add_executable(e3_shaders2 ${E_SHADERS_PATH}/shaders2.cpp ${COMMON_SRCS})
+target_link_libraries(e3_shaders2 ${COMMON_LIBS})
 
-add_executable(e_shaders3 ${E_SHADERS_PATH}/shaders3.cpp ${COMMON_SRCS})
-target_link_libraries(e_shaders3 ${COMMON_LIBS})
+add_executable(e3_shaders3 ${E_SHADERS_PATH}/shaders3.cpp ${COMMON_SRCS})
+target_link_libraries(e3_shaders3 ${COMMON_LIBS})
 
-add_executable(e_textures2 ${E_TEXTURES_PATH}/textures2.cpp ${COMMON_SRCS})
-target_link_libraries(e_textures2 ${COMMON_LIBS})
+add_executable(e4_textures2 ${E_TEXTURES_PATH}/textures2.cpp ${COMMON_SRCS})
+target_link_libraries(e4_textures2 ${COMMON_LIBS})
 
-add_executable(e_textures3 ${E_TEXTURES_PATH}/textures3.cpp ${COMMON_SRCS})
-target_link_libraries(e_textures3 ${COMMON_LIBS})
+add_executable(e4_textures3 ${E_TEXTURES_PATH}/textures3.cpp ${COMMON_SRCS})
+target_link_libraries(e4_textures3 ${COMMON_LIBS})
 
-add_executable(e_textures4 ${E_TEXTURES_PATH}/textures4.cpp ${COMMON_SRCS})
-target_link_libraries(e_textures4 ${COMMON_LIBS})
+add_executable(e4_textures4 ${E_TEXTURES_PATH}/textures4.cpp ${COMMON_SRCS})
+target_link_libraries(e4_textures4 ${COMMON_LIBS})
 
-add_executable(e_transform2 ${E_TRANSFROMS_PATH}/transformations2.cpp ${COMMON_SRCS})
-target_link_libraries(e_transform2 ${COMMON_LIBS})
+add_executable(e5_transform2 ${E_TRANSFROMS_PATH}/transformations2.cpp ${COMMON_SRCS})
+target_link_libraries(e5_transform2 ${COMMON_LIBS})
 
-add_executable(e_coordinateSystem3 ${E_COORDINATE_SYSTEM_PATH}/coordinate_systems.cpp ${COMMON_SRCS})
-target_link_libraries(e_coordinateSystem3 ${COMMON_LIBS})
+add_executable(e6_coordinateSystem3 ${E_COORDINATE_SYSTEM_PATH}/coordinate_systems.cpp ${COMMON_SRCS})
+target_link_libraries(e6_coordinateSystem3 ${COMMON_LIBS})
 
 
 
